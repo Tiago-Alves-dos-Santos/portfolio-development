@@ -1,22 +1,24 @@
 <template>
     <div class="flex justify-center bg-white shadow-md">
-        <div class="container flex justify-between py-4 bg-red-400 ">
-            <div>
-                <font-awesome-icon icon="moon"/>
-                <font-awesome-icon icon="fa-solid fa-sun" />
+        <div class="container flex justify-between ">
+            <!-- button toggle dark theme -->
+            <div class="relative top-[10px] rounded-full w-[30px] h-[30px] flex justify-center flex-col items-center bg-black">
+                <font-awesome-icon icon="moon" class="text-yellow-300"/>
+                <font-awesome-icon icon="fa-solid fa-sun" class="hidden"/>
             </div>
-            <div class="flex space-x-4">
+            <!-- links of navbar -->
+            <div class="flex space-x-4 ">
                 <!-- <router-link to="/">SOBRE</router-link> 
                 <router-link to="/">HABILIDADES</router-link> 
                 <router-link to="/">PROJETOS</router-link> 
                 <router-link to="/">EXPERIÊNCIAS</router-link> 
                 <router-link to="/">CONTATO</router-link>  -->
 
-                <a href="">SOBRE</a>
-                <a href="">HABILIDADES</a>
-                <a href="">PROJETOS</a>
-                <a href="">EXPERIÊNCIAS</a>
-                <a href="">CONTATO</a>
+                <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white">SOBRE</a>
+                <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white">HABILIDADES</a>
+                <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white">PROJETOS</a>
+                <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white">EXPERIÊNCIAS</a>
+                <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white">CONTATO</a>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <NavFlowLayout>
-    <div>
+    <div class="text-red-500">
       dfdf
     </div>
   </NavFlowLayout>
