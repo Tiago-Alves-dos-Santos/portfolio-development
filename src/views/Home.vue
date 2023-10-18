@@ -1,7 +1,7 @@
 <template>
   <NavFlowLayout>
-    <div class="home">
-      home
+    <div>
+      dfdf
     </div>
   </NavFlowLayout>
 </template>
