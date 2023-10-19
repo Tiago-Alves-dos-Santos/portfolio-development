@@ -21,8 +21,10 @@
                 <router-link to="/">CONTATO</router-link>  -->
                 <div class="relative flex flex-col justify-center items-center content-center sm:hidden" @click="openMenuMobile">
                     <font-awesome-icon icon="fa-solid fa-bars" class="text-xl mr-2 dark:text-white sm:mr-0" />
-                    <div id="menuMobile" class="hidden absolute flex-col top-[25px] right-[8px] rounded-md text-center shadow-md bg-white border border-black">
-                        <a href="" v-for="(value, index) in menu_links" :key="index" class="uppercase py-2 px-2 border-b border-black">
+                    <div id="menuMobile" class="hidden absolute flex-col top-[30px] right-[8px] rounded-md text-center shadow-md bg-white border border-black">
+                        <a href="" v-for="(value, index) in menu_links" :key="index" 
+                        class="uppercase py-2 px-2 border-b border-black
+                        dark:bg-primary-600 dark:text-white ">
                             {{ value.name }}
                         </a>
                     </div>
