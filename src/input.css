@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    
-}
 :root {
     --color-primary: rgb(0,0,0);
 }
@@ -12,3 +9,5 @@ a.nav-active{
     background-color: var(--color-primary);
     color: white;
 }
+
+/*********************************NAVBAR***********************************/

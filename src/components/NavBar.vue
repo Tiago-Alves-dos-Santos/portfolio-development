@@ -1,11 +1,11 @@
 <template>
-    <div class="flex justify-center bg-white shadow-md">
+    <div class="flex justify-center bg-white shadow-md dark:bg-black">
         <div class="container flex justify-between py-2 md:py-0">
             <!-- button toggle dark theme -->
-            <div class="relative w-[30px] h-[30px] rounded-full flex justify-center flex-col items-center bg-black
-            cursor-pointer md:top-[10px]">
-                <font-awesome-icon icon="moon" class="text-yellow-300"/>
-                <font-awesome-icon icon="fa-solid fa-sun" class="hidden"/>
+            <div id="theme_btn" class="relative w-[30px] h-[30px] rounded-full flex justify-center flex-col items-center  
+            md:top-[10px] border-2 border-black cursor-pointer" @click="toggleTheme">
+                <font-awesome-icon id="theme_dark" icon="moon" class=""/>
+                <font-awesome-icon id="theme_light" icon="fa-solid fa-sun" class="hidden"/>
             </div>
             <!-- links of navbar -->
             <div class="flex">
@@ -28,11 +28,32 @@
 </template>
 
 <script>
+import Theme from '../js/enum/theme.js';
 export default {
     data() {
         return {
-            teste: 'teetet'
+            data_theme: Theme,
+            theme_actual: Theme.light
         }
     },
+    methods: {
+        toggleTheme(){
+            let body = document.body;
+            let theme_dark = document.getElementById('theme_dark');
+            let theme_light = document.getElementById('theme_light');
+            if(this.theme_actual == Theme.light){//theme to dark
+                this.theme_actual = Theme.dark;
+                //class
+                body.classList.add('dark');
+                theme_dark.classList.add('hidden');
+                theme_light.classList.remove('hidden');
+            }else{//theme to light
+                this.theme_actual = Theme.light;
+                body.classList.remove('dark');
+                theme_dark.classList.remove('hidden');
+                theme_light.classList.add('hidden');
+            }
+        }
+    }
 }
 </script>
