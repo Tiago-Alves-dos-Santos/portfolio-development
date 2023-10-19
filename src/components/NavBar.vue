@@ -8,7 +8,7 @@
               dark:border-white
                 sm:ml-0
                 border-2 border-black cursor-pointer" @click="toggleTheme">
-                    <font-awesome-icon id="theme_dark" icon="moon" class=" dark:text-white" />
+                    <font-awesome-icon id="theme_dark" icon="fa-slid fa-moon" class=" dark:text-white" />
                     <font-awesome-icon id="theme_light" icon="fa-solid fa-sun" class="hidden dark:text-white" />
                 </div>
             </div>

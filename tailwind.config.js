@@ -2,8 +2,9 @@
 /** npx tailwindcss -i src/input.css -o src/assets/output.css --watch */
 module.exports = {
   content: [
+    "./public/index.html",
     "./src/**/*.{html,js,vue}",
-    "./src/**/**/*.{html,js,vue}"
+    "./src/**/**/*.{html,js,vue}",
   ],
   darkMode: 'class',
   theme: {
