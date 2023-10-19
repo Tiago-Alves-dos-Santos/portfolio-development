@@ -19,29 +19,19 @@
                 <router-link to="/">PROJETOS</router-link> 
                 <router-link to="/">EXPERIÊNCIAS</router-link> 
                 <router-link to="/">CONTATO</router-link>  -->
-                <div class="flex flex-col justify-center items-center content-center sm:hidden">
+                <div class="relative flex flex-col justify-center items-center content-center sm:hidden" @click="openMenuMobile">
                     <font-awesome-icon icon="fa-solid fa-bars" class="text-xl mr-2 dark:text-white sm:mr-0" />
+                    <div id="menuMobile" class="hidden absolute flex-col top-[25px] right-[8px] rounded-md text-center shadow-md bg-white border border-black">
+                        <a href="" v-for="(value, index) in menu_links" :key="index" class="uppercase py-2 px-2 border-b border-black">
+                            {{ value.name }}
+                        </a>
+                    </div>
                 </div>
                 <div class="hidden sm:flex">
-                    <a href="" class="nav-active py-4 px-4 hover:text-white dark:text-white 
-                    dark:hover:text-black dark:hover:bg-white">
-                        SOBRE
-                    </a>
-                    <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white 
-                    dark:text-white dark:hover:text-black dark:hover:bg-white">
-                        HABILIDADES
-                    </a>
-                    <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white 
-                    dark:text-white dark:hover:text-black dark:hover:bg-white">
-                        PROJETOS
-                    </a>
-                    <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white 
-                    dark:text-white dark:hover:text-black dark:hover:bg-white">
-                        EXPERIÊNCIAS
-                    </a>
-                    <a href="" class="py-4 px-4 hover:bg-primary-900 hover:text-white 
-                    dark:text-white dark:hover:text-black dark:hover:bg-white">
-                        CONTATO
+                    <!-- nav-active -->
+                    <a href="" class="uppercase py-4 px-4 hover:bg-primary-900 hover:text-white 
+                    dark:text-white dark:hover:text-black dark:hover:bg-white" v-for="(value, index) in menu_links" :key="index" >
+                        {{ value.name }}
                     </a>
                 </div>
             </div>
@@ -55,7 +45,30 @@ export default {
     data() {
         return {
             data_theme: Theme,
-            theme_actual: Theme.light
+            theme_actual: Theme.light,
+            menu_links: {
+                about: {
+                    name: 'sobre',
+                    url: '/',
+                },
+                skills: {
+                    name: 'habilidades',
+                    url: '/',
+                },
+                projects: {
+                    name: 'projetos',
+                    url: '/',
+                },
+                experience: {
+                    name: 'experiência',
+                    url: '/',
+                },
+                contact: {
+                    name: 'contato',
+                    url: '/',
+                },
+            },
+            menuMobileIsOpen: false
         }
     },
     methods: {
@@ -74,6 +87,18 @@ export default {
                 body.classList.remove('dark');
                 theme_dark.classList.remove('hidden');
                 theme_light.classList.add('hidden');
+            }
+        },
+        openMenuMobile(){
+            let menuMobile = document.getElementById('menuMobile');
+            if(this.menuMobileIsOpen){//close menu mobile
+                menuMobile.classList.add('hidden');
+                menuMobile.classList.remove('flex');
+                this.menuMobileIsOpen = false;
+            }else{//open menu
+                menuMobile.classList.remove('hidden');
+                menuMobile.classList.add('flex');
+                this.menuMobileIsOpen = true;
             }
         }
     }
