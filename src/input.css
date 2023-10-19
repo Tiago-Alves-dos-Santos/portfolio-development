@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --color-primary: rgb(0,0,0);
+    --color-secondary: rgb(255,255,255);
+}
+a.nav-active{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+
+/*********************************NAVBAR***********************************/
+
+
+/*******************************DARK THEME**********************************/
+body.dark{
+    background-color: #333333;
+}
+.dark a.nav-active{
+    background-color: var(--color-secondary);
+    color: black;
+}
