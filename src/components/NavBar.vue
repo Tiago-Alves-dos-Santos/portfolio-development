@@ -1,8 +1,8 @@
 <template>
-    <div class="flex justify-center bg-white shadow-md dark:bg-black">
+    <div class="flex justify-center bg-gray-100 shadow-md dark:bg-black">
         <div class="container flex justify-between py-2 sm:py-0">
             <!-- button toggle dark theme -->
-            <div class="flex justify-center flex-col">
+            <div class="flex flex-col justify-center">
                 <div class="relative w-[30px] h-[30px] rounded-full flex justify-center flex-col items-center
                 ml-1 
               dark:border-white
@@ -19,20 +19,23 @@
                 <router-link to="/">PROJETOS</router-link> 
                 <router-link to="/">EXPERIÊNCIAS</router-link> 
                 <router-link to="/">CONTATO</router-link>  -->
-                <div class="relative flex flex-col justify-center items-center content-center sm:hidden" @click="openMenuMobile">
-                    <font-awesome-icon icon="fa-solid fa-bars" class="text-xl mr-2 dark:text-white sm:mr-0" />
-                    <div id="menuMobile" class="hidden absolute flex-col top-[30px] right-[8px] rounded-md text-center shadow-md bg-white border border-black dark:bg-primary-600">
-                        <a href="" v-for="(value, index) in menu_links" :key="index" 
-                        class="uppercase py-2 px-2 border-b border-black
-                      dark:text-white ">
+
+                <div class="relative flex flex-col items-center content-center justify-center sm:hidden"
+                    @click="openMenuMobile">
+                    <font-awesome-icon icon="fa-solid fa-bars" class="mr-2 text-xl dark:text-white sm:mr-0" />
+                    <div id="menuMobile"
+                        class="hidden absolute flex-col top-[30px] right-[8px] rounded-md text-center shadow-md bg-white border border-black dark:bg-primary-600">
+                        <a href="" v-for="(value, index) in menu_links" :key="index"
+                            class="px-2 py-2 uppercase border-b border-black dark:text-white ">
                             {{ value.name }}
                         </a>
                     </div>
                 </div>
                 <div class="hidden sm:flex">
                     <!-- nav-active -->
-                    <a href="" class="uppercase py-4 px-4 hover:bg-primary-900 hover:text-white 
-                    dark:text-white dark:hover:text-black dark:hover:bg-white" v-for="(value, index) in menu_links" :key="index" >
+                    <a href=""
+                        class="px-4 py-4 uppercase hover:bg-primary-900 hover:text-white dark:text-white dark:hover:text-black dark:hover:bg-white"
+                        v-for="(value, index) in menu_links" :key="index">
                         {{ value.name }}
                     </a>
                 </div>
@@ -91,13 +94,13 @@ export default {
                 theme_light.classList.add('hidden');
             }
         },
-        openMenuMobile(){
+        openMenuMobile() {
             let menuMobile = document.getElementById('menuMobile');
-            if(this.menuMobileIsOpen){//close menu mobile
+            if (this.menuMobileIsOpen) {//close menu mobile
                 menuMobile.classList.add('hidden');
                 menuMobile.classList.remove('flex');
                 this.menuMobileIsOpen = false;
-            }else{//open menu
+            } else {//open menu
                 menuMobile.classList.remove('hidden');
                 menuMobile.classList.add('flex');
                 this.menuMobileIsOpen = true;
