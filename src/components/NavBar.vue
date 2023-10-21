@@ -24,7 +24,7 @@
                     @click="openMenuMobile">
                     <font-awesome-icon icon="fa-solid fa-bars" class="mr-2 text-xl dark:text-white sm:mr-0" />
                     <div id="menuMobile"
-                        class="hidden absolute flex-col top-[30px] right-[8px] rounded-md text-center shadow-md bg-white border border-black dark:bg-primary-600">
+                        class="hidden z-30 absolute flex-col top-[30px] right-[8px] rounded-md text-center shadow-md bg-white border border-black dark:bg-primary-600">
                         <a href="" v-for="(value, index) in menu_links" :key="index"
                             class="px-2 py-2 uppercase border-b border-black dark:text-white ">
                             {{ value.name }}
