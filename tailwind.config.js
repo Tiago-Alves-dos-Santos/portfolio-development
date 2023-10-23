@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     extend:{
       colors: {
+        'gray-rgba':'rgba(145, 145, 145, .8)',
         primary : {
           100: '#666666',
           200: '#5c5c5c',

@@ -7,13 +7,17 @@
                     <!-- Picture and info text -->
                     <div class="p-2 border-b border-b-black md:w-full md:border-r md:border-b-0 md:border-r-black">
                         <div class="flex justify-center">
-                            <img src="@/assets/iprofile.png" class="w-[100px] md:w-[150px] rounded-full" alt="" @click="showLightBox">
-                            <vue-easy-lightbox
-                            :visible="toggle_lightbox"
-                            :imgs="img"
-                            :index="0"
-                            @hide="closeLightBox"
-                          ></vue-easy-lightbox>
+                            <div class="relative bg-blue-500 rounded-full container-img-lighbox group">
+                                <img src="@/assets/iprofile.png" class="w-[100px] md:w-[150px] rounded-full" alt="">
+                                <div
+                                    class="absolute top-0 flex-col items-center justify-center hidden w-full h-full rounded-full group-hover:flex bg-gray-rgba">
+                                    <button class="px-2 text-black bg-white rounded-lg md:px-4 md:py-2" @click="showLightBox">
+                                        VER FOTO
+                                    </button>
+                                </div>
+                            </div>
+                            <vue-easy-lightbox :visible="toggle_lightbox" :imgs="img" :index="0"
+                                @hide="closeLightBox"></vue-easy-lightbox>
                         </div>
                         <div class="mt-2">
                             <h1 class="dark:text-zinc-300">
@@ -38,16 +42,19 @@
                                     href="" class="text-blue-400 underline hover:text-blue-600">habilidades</a>. Destas <a
                                     href="" class="text-blue-400 underline hover:text-blue-600">habilidades</a> minha paixão
                                 no ramo ‘back-end’ se encontra no PHP, pois ao contrário do ditado popular: <span
-                                    class="italic">"PHP é só CRUD"</span>, sei que ele muito mais que isso. Outra paixão que tenho, saindo do ramo de desenvolvimento,
+                                    class="italic">"PHP é só CRUD"</span>, sei que ele muito mais que isso. Outra paixão que
+                                tenho, saindo do ramo de desenvolvimento,
                                 é tocar
                                 meu saxofone, afinal quem não gosta de uma boa música​!? 🎷​🎵
                             </p>
                         </div>
                         <div class="flex justify-end md:absolute md:bottom-px md:right-px">
-                            <a href="https://www.linkedin.com/in/tiago-alves-dos-santos-de-oliveira-96699a189/" target="_blank">
+                            <a href="https://www.linkedin.com/in/tiago-alves-dos-santos-de-oliveira-96699a189/"
+                                target="_blank">
                                 <img src="@/assets/icons8-linkedin.svg" alt="linkedin">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=558899484317&text=Ol%C3%A1,%20cheguei%20aqui%20por%20meio%20de%20seu%20portfolio!%20Me%20chamo..." target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=558899484317&text=Ol%C3%A1,%20cheguei%20aqui%20por%20meio%20de%20seu%20portfolio!%20Me%20chamo..."
+                                target="_blank">
                                 <img src="@/assets/icons8-whatsapp.svg" alt="whatsapp">
                             </a>
                             <a href="https://t.me/TiagoAlves2001" target="_blank">
@@ -83,11 +90,11 @@ export default {
         }
     },
     methods: {
-        showLightBox(){
+        showLightBox() {
             this.img = require("@/assets/iprofile.png");
             this.toggle_lightbox = true;
         },
-        closeLightBox(){
+        closeLightBox() {
             this.toggle_lightbox = false;
         }
     }
