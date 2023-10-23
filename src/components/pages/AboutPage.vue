@@ -24,7 +24,7 @@
                     <div class="relative p-2 md:p-0 md:pl-2">
                         <div>
                             <p class="text-justify">
-                                Olá! (bom dia)! Me chamo Tiago Alves sou Desenvolvedor Web ‘back-end’ com PHP tenho (4 anos) de experiencia no mercado. Nesta curta estrada tive contato com diversas tecnologias, qual informo na seção de habilidades(link). Destas habilidades minha paixão, no ramo ‘back-end’, se encontra no PHP, pois ao contrário do ditado popular (PHP é só CRUD) ele muito mais que CRUD. Outra paixão que tenho saindo do ramo de desenvolvimento é tocar meu saxofone, afinal quem não gosta de uma boa música​!? 🎷​🎵
+                                Olá! <span>{{welcome_message}}</span>! Me chamo Tiago Alves sou Desenvolvedor Web ‘back-end’ com PHP tenho {{ experience_time.years }} anos de experiencia no mercado, contando com estágios, empregos e 'freelancers'. Nesta curta estrada tive contato com diversas tecnologias, qual informo na seção de habilidades(link). Destas habilidades minha paixão, no ramo ‘back-end’, se encontra no PHP, pois ao contrário do ditado popular (PHP é só CRUD) ele muito mais que CRUD. Outra paixão que tenho saindo do ramo de desenvolvimento é tocar meu saxofone, afinal quem não gosta de uma boa música​!? 🎷​🎵
                             </p>
                         </div>
                         <div class="flex justify-end md:absolute md:bottom-px md:right-px">
@@ -52,10 +52,17 @@
 </style>
 <script>
 import TitleSection from '../TitleSections.vue';
+import Functions from '@/js/functions';
 /* eslint-disable */
 export default {
     components: {
         TitleSection
-    }
+    },
+    data() {
+        return {
+            welcome_message: Functions.getGoodTimeMessage(),
+            experience_time: Functions.dateDifference('2019-03-01'),
+        }
+    },
 }
 </script>
