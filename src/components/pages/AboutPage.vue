@@ -29,7 +29,8 @@
                                 <span class="font-bold">Inglês:</span>
                                 Cursando inglês na Wizard.
                                 ({{
-                                    (experience_english.years > 0 ? experience_english.years + ' anos e ' : '' ) + (experience_english.months + 1) + ' meses' 
+                                    (experience_english.years > 0 ? experience_english.years + ' anos e ' : '') +
+                                    (experience_english.months + 1) + ' meses'
                                 }})
                             </h2>
                         </div>
@@ -38,17 +39,19 @@
                     <div class="relative p-2 md:p-0 md:pl-2">
                         <div>
                             <p class="text-justify">
-                                Olá! <span>{{ welcome_message }}</span>! Me chamo Tiago Alves tenho {{ my_years.years }} anos sou <span
-                                    class="font-bold">Desenvolvedor Web ‘back-end’</span> com <span
+                                Olá! <span>{{ welcome_message }}</span>! Me chamo Tiago Alves tenho {{ my_years.years }}
+                                anos sou <span class="font-bold">Desenvolvedor Web ‘back-end’</span> com <span
                                     class="font-bold">PHP</span>, tenho <span class="font-bold">{{ experience_time.years }}
                                     anos de experiência</span> no mercado contando com estágios, empregos e 'freelancers'.
                                 Nesta curta estrada tive contato com diversas tecnologias, qual informo na seção de <a
                                     href="" class="text-blue-400 underline hover:text-blue-600">habilidades</a>. Destas <a
                                     href="" class="text-blue-400 underline hover:text-blue-600">habilidades</a> minha paixão
                                 no ramo ‘back-end’ se encontra no PHP, pois ao contrário do ditado popular: <span
-                                    class="italic">"PHP é só CRUD"</span>, sei que ele muito mais que isso. Outras paixão que
+                                    class="italic">"PHP é só CRUD"</span>, sei que ele muito mais que isso. Outras paixão
+                                que
                                 tenho, saindo do ramo de desenvolvimento,
-                                é a lingua inglesa. Aprender a falar fluentemente o <span class="font-semibold">inglês</span> e tocar
+                                é a lingua inglesa. Aprender a falar fluentemente o <span
+                                    class="font-semibold">inglês</span> e tocar
                                 meu saxofone, afinal quem não gosta de uma boa música​!? 🎷​🎵
                             </p>
                         </div>
@@ -78,7 +81,8 @@
 <script>
 import TitleSection from '../TitleSections.vue';
 import Functions from '@/js/functions';
-import VueEasyLightbox from 'vue-easy-lightbox'
+import VueEasyLightbox from 'vue-easy-lightbox';
+import Swal from 'sweetalert2';
 /* eslint-disable */
 export default {
     components: {
@@ -97,8 +101,18 @@ export default {
     },
     methods: {
         showLightBox() {
-            this.img = require("@/assets/iprofile.png");
-            this.toggle_lightbox = true;
+            Swal.fire({
+                title: 'Atenção!',
+                text: 'Tem realmente certeza que quer continuar? Quer realmente ver minha foto? 😬​',
+                showDenyButton: true,
+                confirmButtonText: 'Sim, quero ver!',
+                denyButtonText: 'Não, obrigado por avisar! 😮‍💨​',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    this.img = require("@/assets/iprofile.png");
+                    this.toggle_lightbox = true;
+                }
+            })
         },
         closeLightBox() {
             this.toggle_lightbox = false;
