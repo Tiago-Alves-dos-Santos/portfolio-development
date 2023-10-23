@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center mt-1" >
+    <div class="flex justify-center mt-1">
         <div class="container bg-white rounded-md dark:bg-primary-100">
             <TitleSection title="Sobre"></TitleSection>
             <div class="flex justify-center w-full mt-3">
@@ -24,22 +24,32 @@
                     <div class="relative p-2 md:p-0 md:pl-2">
                         <div>
                             <p class="text-justify">
-                                Olá! <span>{{welcome_message}}</span>! Me chamo Tiago Alves sou Desenvolvedor Web ‘back-end’ com PHP tenho {{ experience_time.years }} anos de experiencia no mercado, contando com estágios, empregos e 'freelancers'. Nesta curta estrada tive contato com diversas tecnologias, qual informo na seção de habilidades(link). Destas habilidades minha paixão, no ramo ‘back-end’, se encontra no PHP, pois ao contrário do ditado popular (PHP é só CRUD) ele muito mais que CRUD. Outra paixão que tenho saindo do ramo de desenvolvimento é tocar meu saxofone, afinal quem não gosta de uma boa música​!? 🎷​🎵
+                                Olá! <span>{{ welcome_message }}</span>! Me chamo Tiago Alves sou <span
+                                    class="font-bold">Desenvolvedor Web ‘back-end’</span> com <span
+                                    class="font-bold">PHP</span>, tenho <span class="font-bold">{{ experience_time.years }}
+                                    anos de experiência</span> no mercado contando com estágios, empregos e 'freelancers'.
+                                Nesta curta estrada tive contato com diversas tecnologias, qual informo na seção de <a
+                                    href="" class="text-blue-400 underline hover:text-blue-600">habilidades</a>. Destas <a
+                                    href="" class="text-blue-400 underline hover:text-blue-600">habilidades</a> minha paixão
+                                no ramo ‘back-end’ se encontra no PHP, pois ao contrário do ditado popular: <span
+                                    class="italic">"PHP é só CRUD"</span>, sei que ele muito mais que isso. Outra paixão que tenho, saindo do ramo de desenvolvimento,
+                                é tocar
+                                meu saxofone, afinal quem não gosta de uma boa música​!? 🎷​🎵
                             </p>
                         </div>
                         <div class="flex justify-end md:absolute md:bottom-px md:right-px">
-                            <a href="" target="_blank">
+                            <a href="https://www.linkedin.com/in/tiago-alves-dos-santos-de-oliveira-96699a189/" target="_blank">
                                 <img src="@/assets/icons8-linkedin.svg" alt="linkedin">
                             </a>
-                            <a href="" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=558899484317&text=Ol%C3%A1,%20cheguei%20aqui%20por%20meio%20de%20seu%20portfolio!%20Me%20chamo..." target="_blank">
                                 <img src="@/assets/icons8-whatsapp.svg" alt="whatsapp">
                             </a>
-                            <a href="" target="_blank">
+                            <a href="https://t.me/TiagoAlves2001" target="_blank">
                                 <img src="@/assets/icons8-telegram.svg" alt="telegram">
                             </a>
                             <a href="" target="_blank">
                                 <img src="@/assets/icons8-pdf-48.png" alt="curricúlo">
-                            </a>    
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -47,9 +57,7 @@
         </div>
     </div>
 </template>
-<style scoped>
-
-</style>
+<style scoped></style>
 <script>
 import TitleSection from '../TitleSections.vue';
 import Functions from '@/js/functions';
