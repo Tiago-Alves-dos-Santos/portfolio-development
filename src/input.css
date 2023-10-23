@@ -10,15 +10,12 @@ a.nav-active{
     background-color: var(--color-primary);
     color: white;
 }
-/* div.container-img-lighbox{
-
+.parallax-bg{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-div.container-img-lighbox div{
-    display: none;
-}
-div.container-img-lighbox:hover div{
-    display: flex;
-} */
 
 /*******************************DARK THEME**********************************/
 body.dark{

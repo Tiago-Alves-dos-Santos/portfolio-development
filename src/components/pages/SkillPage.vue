@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center p-4 mt-1 bg-code">
+    <div class="flex justify-center p-4 mt-1 bg-code parallax-bg">
         <h1>Skills</h1>
         <div class="container">
             <title-section title="HABILIDADES"></title-section>
