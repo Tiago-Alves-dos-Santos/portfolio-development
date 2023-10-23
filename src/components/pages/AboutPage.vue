@@ -1,6 +1,6 @@
 <template>
-    <div class="flex justify-center mt-1">
-        <div class="container bg-white rounded-md dark:bg-primary-100">
+    <div class="flex justify-center mt-1 bg-white sm:p-10">
+        <div class="container rounded-md dark:bg-primary-100">
             <TitleSection title="Sobre"></TitleSection>
             <div class="flex justify-center w-full mt-3">
                 <div class="w-full pb-2 md:px-4 md:flex">
@@ -48,7 +48,7 @@
                                 no ramo ‘back-end’ se encontra no PHP, pois ao contrário do ditado popular: <span
                                     class="italic">"PHP é só CRUD"</span>, sei que ele muito mais que isso. Outras paixão que
                                 tenho, saindo do ramo de desenvolvimento,
-                                é a lingua inglesa, aprender a falar fluentemente o <span class="font-semibold">inglês</span> e tocar
+                                é a lingua inglesa. Aprender a falar fluentemente o <span class="font-semibold">inglês</span> e tocar
                                 meu saxofone, afinal quem não gosta de uma boa música​!? 🎷​🎵
                             </p>
                         </div>
