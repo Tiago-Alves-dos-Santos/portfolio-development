@@ -10,10 +10,15 @@ a.nav-active{
     background-color: var(--color-primary);
     color: white;
 }
+/* div.container-img-lighbox{
 
-
-/*********************************NAVBAR***********************************/
-
+}
+div.container-img-lighbox div{
+    display: none;
+}
+div.container-img-lighbox:hover div{
+    display: flex;
+} */
 
 /*******************************DARK THEME**********************************/
 body.dark{
@@ -22,4 +27,7 @@ body.dark{
 .dark a.nav-active{
     background-color: var(--color-secondary);
     color: black;
+}
+.dark p{
+    color: #d4d4d8;
 }
