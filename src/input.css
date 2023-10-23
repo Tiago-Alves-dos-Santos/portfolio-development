@@ -19,3 +19,6 @@ body.dark{
     background-color: var(--color-secondary);
     color: black;
 }
+.dark p{
+    color: #d4d4d8;
+}

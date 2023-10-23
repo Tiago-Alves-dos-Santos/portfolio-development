@@ -29,11 +29,11 @@ div.title-section div.border-title{
 }
 /***THEME DARK**/
 .dark div.title-section h1{
-    color: white;
-    background-color: #5c5c5c;
+    color: #e4e4e7;
+    background-color: #666666;
 }
 .dark div.title-section div.border-title{
-    background-color: white;
+    background-color: #e4e4e7;
 }
 </style>
 <script>
