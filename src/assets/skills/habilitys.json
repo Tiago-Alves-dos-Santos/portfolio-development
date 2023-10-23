@@ -1,0 +1,12 @@
+[
+    {
+        "name": "javascript",
+        "title": "JavaScript",
+        "picture": "@/assets/skills/js.png"
+    },
+    {
+        "name": "php",
+        "title": "PHP",
+        "picture": "@/assets/skills/php.png"
+    }
+]

@@ -1,7 +1,7 @@
 <template>
-    <div class="flex justify-center mt-1 bg-white sm:p-10">
-        <div class="container rounded-md dark:bg-primary-100">
-            <TitleSection title="Sobre"></TitleSection>
+    <div class="flex justify-center mt-1 bg-white sm:p-10 dark:bg-primary-100">
+        <div class="container rounded-md">
+            <title-section title="Sobre"></title-section>
             <div class="flex justify-center w-full mt-3">
                 <div class="w-full pb-2 md:px-4 md:flex">
                     <!-- Picture and info text -->
@@ -79,14 +79,12 @@
 </template>
 <style scoped></style>
 <script>
-import TitleSection from '../TitleSections.vue';
 import Functions from '@/js/functions';
 import VueEasyLightbox from 'vue-easy-lightbox';
 import Swal from 'sweetalert2';
 /* eslint-disable */
 export default {
     components: {
-        TitleSection,
         VueEasyLightbox
     },
     data() {

@@ -24,6 +24,9 @@ module.exports = {
         }
       },
     },
+    backgroundImage: {
+      'code': "url('/src/assets/code_tag.jpg')",
+    },
     fontFamily: {
     },
   },
