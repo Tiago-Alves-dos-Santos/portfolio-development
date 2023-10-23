@@ -7,7 +7,13 @@
                     <!-- Picture and info text -->
                     <div class="p-2 border-b border-b-black md:w-full md:border-r md:border-b-0 md:border-r-black">
                         <div class="flex justify-center">
-                            <img src="@/assets/iprofile.png" class="w-[100px] md:w-[150px] rounded-full" alt="">
+                            <img src="@/assets/iprofile.png" class="w-[100px] md:w-[150px] rounded-full" alt="" @click="showLightBox">
+                            <vue-easy-lightbox
+                            :visible="toggle_lightbox"
+                            :imgs="img"
+                            :index="0"
+                            @hide="closeLightBox"
+                          ></vue-easy-lightbox>
                         </div>
                         <div class="mt-2">
                             <h1 class="dark:text-zinc-300">
@@ -61,16 +67,29 @@
 <script>
 import TitleSection from '../TitleSections.vue';
 import Functions from '@/js/functions';
+import VueEasyLightbox from 'vue-easy-lightbox'
 /* eslint-disable */
 export default {
     components: {
-        TitleSection
+        TitleSection,
+        VueEasyLightbox
     },
     data() {
         return {
             welcome_message: Functions.getGoodTimeMessage(),
             experience_time: Functions.dateDifference('2019-03-01'),
+            toggle_lightbox: false,
+            img: '',
         }
     },
+    methods: {
+        showLightBox(){
+            this.img = require("@/assets/iprofile.png");
+            this.toggle_lightbox = true;
+        },
+        closeLightBox(){
+            this.toggle_lightbox = false;
+        }
+    }
 }
 </script>
