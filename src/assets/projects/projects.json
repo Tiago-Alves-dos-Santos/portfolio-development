@@ -1,0 +1,221 @@
+[
+    {
+        "name":"covid 19",
+        "title": "Covid-19",
+        "picture": "covid.png",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"https://github.com/Tiago-Alves-dos-Santos/Covid19",
+            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/Covid19/blob/master/README.md"
+        },
+        "short_description": "Sistema consumindo API sobre o covid-19 no Brasil, consumindo pelo BACK-END.",
+        "languages": [
+            {
+                "name":"HTML",
+                "version": "5",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"CSS",
+                "version": "3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"BLADE",
+                "version": "",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"BOOTSTRAP",
+                "version": "^5.2.3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"JQUERY",
+                "version": "3.7",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NODE",
+                "version": "16.14.2",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NPM",
+                "version": "8.5.0",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"PHP",
+                "version": "7.4.9",
+                "category":"BACK-END"
+            },
+            {
+                "name":"LARAVEL",
+                "version": "8",
+                "category":"BACK-END"
+            }
+        ]
+    },
+    {
+        "name":"events vuetify",
+        "title": "Calendário de eventos",
+        "picture": "event_vuetify.png",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"https://github.com/Tiago-Alves-dos-Santos/EventsVuetify",
+            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/EventsVuetify/blob/master/README.md"
+        },
+        "short_description": "Sistema simples de cadastros e controle de eventos.",
+        "languages": [
+            {
+                "name":"HTML",
+                "version": "5",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"CSS",
+                "version": "3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"SASS",
+                "version": "^1.32.11",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"VUE",
+                "version": "^2",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"VUETIFY",
+                "version": "^2",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NODE",
+                "version": "18.17.0",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NPM",
+                "version": "9.6.7",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"PHP",
+                "version": "8.1.9",
+                "category":"BACK-END"
+            },
+            {
+                "name":"LARAVEL",
+                "version": "8.6.12",
+                "category":"BACK-END"
+            },
+            {
+                "name":"INERTIA",
+                "version": "0.6.9",
+                "category":"PACKPAGE-LARAVEL"
+            }
+        ]
+    },
+    {
+        "name":"my list",
+        "title": "ToDoList",
+        "picture": "todoList.png",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"https://github.com/Tiago-Alves-dos-Santos/ToDoList",
+            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/ToDoList/blob/master/README.md"
+        },
+        "short_description": "Sistema de lista de tarefas. O objetivo principal foi demonstrar uso do fortify, sanctum e swagger.",
+        "languages": [
+            {
+                "name":"HTML",
+                "version": "5",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"CSS",
+                "version": "3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"BLADE",
+                "version": "",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"SASS",
+                "version": "^1.32.11",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"VUE",
+                "version": "^2",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"BOOTSTRAP",
+                "version": "^5.2.3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NODE",
+                "version": "18.17.0",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NPM",
+                "version": "9.6.7",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"PHP",
+                "version": "8.1.9",
+                "category":"BACK-END"
+            },
+            {
+                "name":"LARAVEL",
+                "version": "8.6.12",
+                "category":"BACK-END"
+            },
+            {
+                "name":"INERTIA",
+                "version": "0.6.9",
+                "category":"PACKPAGE-LARAVEL"
+            },
+            {
+                "name":"FORTIFY",
+                "version": "^1.17",
+                "category":"PACKPAGE-LARAVEL"
+            },
+            {
+                "name":"SANCTUM",
+                "version": "^1.17",
+                "category":"PACKPAGE-LARAVEL"
+            }
+        ]
+    },
+    {
+        "name":"Construção",
+        "title": "Aguarde...",
+        "picture": "loading_project.jpg",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"",
+            "readme_md":""
+        },
+        "short_description": "O <span class='font-bold'> projeto </span> está em <span class='font-bold'>desenvolvimento</span>, por favor aguarde a conclusão e caso deseje acompanhar acesse o link do github. Obrigado pela compreenção!",
+        "languages": []
+    }
+]
