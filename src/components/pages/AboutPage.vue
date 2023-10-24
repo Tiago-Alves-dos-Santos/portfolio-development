@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center bg-white sm:p-10 dark:bg-primary-100" id="about">
+    <div class="flex justify-center bg-white sm:p-10 dark:bg-primary-100 scroll-lazy" id="about">
         <div class="container rounded-md">
             <title-section title="Sobre" class="mt-11 sm:mt-9"></title-section>
             <div class="flex justify-center w-full mt-3">
