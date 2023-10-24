@@ -1,0 +1,122 @@
+[
+    {
+        "name": "html",
+        "title": "HTML5",
+        "picture": "html.png",
+        "category": "front"
+    },
+    {
+        "name": "css3",
+        "title": "CSS3",
+        "picture": "css3.png",
+        "category": "front"
+    },    {
+        "name": "sass",
+        "title": "SASS",
+        "picture": "sass.png",
+        "category": "front"
+    },
+    {
+        "name": "tailwind",
+        "title": "Tailwind",
+        "picture": "tailwind.png",
+        "category": "frameworkCSS"
+    },
+    {
+        "name": "bootstrap",
+        "title": "Bootstrap",
+        "picture": "bootstrap.png",
+        "category": "frameworkCSS"
+    },
+    {
+        "name": "semantic ui",
+        "title": "semantic ui",
+        "picture": "semantic ui.png",
+        "category": "frameworkCSS"
+    },
+    {
+        "name": "foundation",
+        "title": "Foundation",
+        "picture": "foundation.png",
+        "category": "frameworkCSS"
+    },
+    {
+        "name": "materialize",
+        "title": "Materialize",
+        "picture": "materialize.png",
+        "category": "frameworkCSS"
+    },
+    {
+        "name": "javascript",
+        "title": "JavaScript",
+        "picture": "js.png",
+        "category": "front"
+    },
+    {
+        "name": "jquery",
+        "title": "Jquery",
+        "picture": "jquery.png",
+        "category": "front"
+    },
+    {
+        "name": "vue",
+        "title": "VUE",
+        "picture": "vue.png",
+        "category": "frameworkJS"
+    },
+    {
+        "name": "vuetify",
+        "title": "VUETIFY",
+        "picture": "vuetify.svg",
+        "category": "frameworkJS"
+    },
+    {
+        "name": "quasar",
+        "title": "Quasar",
+        "picture": "quasar.png",
+        "category": "frameworkJS"
+    },
+    {
+        "name": "primevue",
+        "title": "Prime Vue",
+        "picture": "primevue.jpeg",
+        "category": "frameworkJS"
+    },
+    {
+        "name": "inertia",
+        "title": "inertia.js",
+        "picture": "inertia_quadrado.png",
+        "category": "back"
+    },
+    {
+        "name": "php",
+        "title": "PHP",
+        "picture": "php.png",
+        "category": "back"
+    },
+    {
+        "name": "laravel",
+        "title": "laravel",
+        "picture": "laravel.png",
+        "category": "back"
+    },
+    {
+        "name": "livewire",
+        "title": "Livewire",
+        "picture": "Livewire.png",
+        "category": "back"
+    },
+    {
+        "name": "sql",
+        "title": "SQL",
+        "picture": "sql.png",
+        "category": "database"
+    },
+    {
+        "name": "nosql",
+        "title": "NoSQL",
+        "picture": "mongodbText.png",
+        "category": "database"
+    }
+
+]
