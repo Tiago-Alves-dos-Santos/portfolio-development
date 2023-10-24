@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center bg-gray-100 shadow-md dark:bg-black">
+    <div class="fixed z-50 flex justify-center w-full bg-gray-100 shado w-md dark:bg-black">
         <div class="container flex justify-between py-2 sm:py-0">
             <!-- button toggle dark theme -->
             <div class="flex flex-col justify-center">
@@ -25,7 +25,7 @@
                     <font-awesome-icon icon="fa-solid fa-bars" class="mr-2 text-xl dark:text-white sm:mr-0" />
                     <div id="menuMobile"
                         class="hidden z-30 absolute flex-col top-[30px] right-[8px] rounded-md text-center shadow-md bg-white border border-black dark:bg-primary-600">
-                        <a href="" v-for="(value, index) in menu_links" :key="index"
+                        <a :href="value.url" v-for="(value, index) in menu_links" :key="index"
                             class="px-2 py-2 uppercase border-b border-black dark:text-white ">
                             {{ value.name }}
                         </a>

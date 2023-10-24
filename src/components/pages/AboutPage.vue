@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center bg-white sm:p-10 dark:bg-primary-100" id="about">
         <div class="container rounded-md">
-            <title-section title="Sobre"></title-section>
+            <title-section title="Sobre" class="mt-11 sm:mt-9"></title-section>
             <div class="flex justify-center w-full mt-3">
                 <div class="w-full pb-2 md:px-4 md:flex">
                     <!-- Picture and info text -->
