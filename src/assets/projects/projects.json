@@ -10,52 +10,52 @@
             "github_repo":"https://github.com/Tiago-Alves-dos-Santos/Covid19",
             "readme_md":"https://github.com/Tiago-Alves-dos-Santos/Covid19/blob/master/README.md"
         },
-        "short_description": "Sistema consumindo API sobre o covid-19 no Brasil",
+        "short_description": "Sistema consumindo API sobre o covid-19 no Brasil, consumindo pelo BACK-END-end.",
         "languages": [
             {
                 "name":"HTML",
                 "version": "5",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"CSS",
                 "version": "3",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"BLADE",
                 "version": "",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"BOOTSTRAP",
                 "version": "^5.2.3",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"JQUERY",
                 "version": "3.7",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"NODE",
                 "version": "16.14.2",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"NPM",
                 "version": "8.5.0",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"PHP",
                 "version": "7.4.9",
-                "category":"back"
+                "category":"BACK-END"
             },
             {
                 "name":"LARAVEL",
                 "version": "8",
-                "category":"back"
+                "category":"BACK-END"
             }
         ]
     },
@@ -75,47 +75,47 @@
             {
                 "name":"HTML",
                 "version": "5",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"CSS",
                 "version": "3",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"SASS",
                 "version": "^1.32.11",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"VUE",
                 "version": "^2",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"VUETIFY",
                 "version": "^2",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"NODE",
                 "version": "18.17.0",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"NPM",
                 "version": "9.6.7",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"PHP",
                 "version": "8.1.9",
-                "category":"back"
+                "category":"BACK-END"
             },
             {
                 "name":"LARAVEL",
                 "version": "8.6.12",
-                "category":"back"
+                "category":"BACK-END"
             },
             {
                 "name":"INERTIA",
@@ -140,52 +140,52 @@
             {
                 "name":"HTML",
                 "version": "5",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"CSS",
                 "version": "3",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"BLADE",
                 "version": "",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"SASS",
                 "version": "^1.32.11",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"VUE",
                 "version": "^2",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"BOOTSTRAP",
                 "version": "^5.2.3",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"NODE",
                 "version": "18.17.0",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"NPM",
                 "version": "9.6.7",
-                "category":"front"
+                "category":"FRONT-END"
             },
             {
                 "name":"PHP",
                 "version": "8.1.9",
-                "category":"back"
+                "category":"BACK-END"
             },
             {
                 "name":"LARAVEL",
                 "version": "8.6.12",
-                "category":"back"
+                "category":"BACK-END"
             },
             {
                 "name":"INERTIA",
