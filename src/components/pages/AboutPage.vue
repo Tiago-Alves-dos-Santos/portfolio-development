@@ -101,14 +101,28 @@ export default {
         showLightBox() {
             Swal.fire({
                 title: 'Atenção!',
-                text: 'Tem realmente certeza que quer continuar? Quer realmente ver minha foto? 😬​',
+                icon: 'warning',
+                text: 'Realmente deseja ver a foto?​',
                 showDenyButton: true,
                 confirmButtonText: 'Sim, quero ver!',
                 denyButtonText: 'Não, obrigado por avisar! 😮‍💨​',
             }).then((result) => {
                 if (result.isConfirmed) {
-                    this.img = require("@/assets/iprofile.png");
-                    this.toggle_lightbox = true;
+
+                    Swal.fire({
+                        title: 'Atenção!!!!',
+                        icon: 'warning',
+                        text: 'Última chance!!! Realmente deseja ver minha foto? 😬​',
+                        showDenyButton: true,
+                        confirmButtonText: 'Sim, tenho certeza!',
+                        denyButtonText: 'Não, agora mudei de idéia! 😮‍💨​',
+                    }).then((response) => {
+                        if (response.isConfirmed) {
+                            this.img = require("@/assets/iprofile.png");
+                            this.toggle_lightbox = true;
+                        }
+                    })
+
                 }
             })
         },
