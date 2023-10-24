@@ -2,7 +2,7 @@
     <div class="flex flex-wrap justify-center p-4 bg-white sm:p-10 dark:bg-primary-100">
         <div class="container">
             <title-section title="PROJETOS"></title-section>
-            <div class="flex flex-wrap justify-center w-full mt-3">
+            <div class="flex flex-wrap justify-center w-full mt-3 md:justify-start">
                 <card-projects v-for="(value, index) in projects" :key="index" :project="value"></card-projects>
             </div>
             
