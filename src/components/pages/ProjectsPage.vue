@@ -5,6 +5,7 @@
             <div class="flex flex-wrap justify-center w-full mt-3">
                 <card-projects v-for="(value, index) in projects" :key="index" :project="value"></card-projects>
             </div>
+            
         </div>
     </div>
 </template>
