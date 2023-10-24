@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center p-4 mt-1 bg-code parallax-bg">
+    <div class="flex justify-center p-4 bg-code parallax-bg">
         <div class="container">
             <title-section title="HABILIDADES" :dark_theme="false"></title-section>
             <div class="flex flex-wrap justify-center md:justify-start">
@@ -44,7 +44,7 @@ export default {
                 show = false;
             }else if(this.skillFilter == 'front' && (skill.category == 'front' || skill.category == 'frameworkCSS' || skill.category == 'frameworkJS')){ //front end
                 show = false;
-            }else if(this.skillFilter == skill.category){ //back-end, database, only framework css or js
+            }else if(this.skillFilter == skill.category){ //others
                 show = false;
             }
             return show;
