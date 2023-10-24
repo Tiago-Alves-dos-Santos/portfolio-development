@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center p-4 bg-code parallax-bg">
+    <div class="flex justify-center p-4 bg-code parallax-bg" id="skills">
         <div class="container">
             <title-section title="HABILIDADES" :dark_theme="false"></title-section>
             <div class="flex justify-center w-full mt-2 mb-2 ">

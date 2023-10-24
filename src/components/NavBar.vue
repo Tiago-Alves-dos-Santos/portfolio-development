@@ -33,7 +33,7 @@
                 </div>
                 <div class="hidden sm:flex">
                     <!-- nav-active -->
-                    <a href=""
+                    <a :href="value.url"
                         class="px-4 py-4 uppercase hover:bg-primary-900 hover:text-white dark:text-white dark:hover:text-black dark:hover:bg-white"
                         v-for="(value, index) in menu_links" :key="index">
                         {{ value.name }}
@@ -54,15 +54,15 @@ export default {
             menu_links: {
                 about: {
                     name: 'sobre',
-                    url: '/',
+                    url: '#about',
                 },
                 skills: {
                     name: 'habilidades',
-                    url: '/',
+                    url: '#skills',
                 },
                 projects: {
                     name: 'projetos',
-                    url: '/',
+                    url: '#projects',
                 },
                 experience: {
                     name: 'experiência',
