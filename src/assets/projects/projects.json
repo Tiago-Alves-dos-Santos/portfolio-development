@@ -1,5 +1,207 @@
 [
     {
-        
+        "name":"covid 19",
+        "title": "Covid-19",
+        "picture": "covid.png",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"",
+            "readme_md":""
+        },
+        "short_description": "",
+        "languages": [
+            {
+                "name":"HTML",
+                "version": "5",
+                "category":"front"
+            },
+            {
+                "name":"CSS",
+                "version": "3",
+                "category":"front"
+            },
+            {
+                "name":"BLADE",
+                "version": "",
+                "category":"front"
+            },
+            {
+                "name":"BOOTSTRAP",
+                "version": "^5.2.3",
+                "category":"front"
+            },
+            {
+                "name":"JQUERY",
+                "version": "3.7",
+                "category":"front"
+            },
+            {
+                "name":"NODE",
+                "version": "16.14.2",
+                "category":"front"
+            },
+            {
+                "name":"NPM",
+                "version": "8.5.0",
+                "category":"front"
+            },
+            {
+                "name":"PHP",
+                "version": "7.4.9",
+                "category":"back"
+            },
+            {
+                "name":"LARAVEL",
+                "version": "8",
+                "category":"back"
+            }
+        ]
+    },
+    {
+        "name":"events vuetify",
+        "title": "Evento Fácil",
+        "picture": "event_vuetify.png",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"",
+            "readme_md":""
+        },
+        "short_description": "",
+        "languages": [
+            {
+                "name":"HTML",
+                "version": "5",
+                "category":"front"
+            },
+            {
+                "name":"CSS",
+                "version": "3",
+                "category":"front"
+            },
+            {
+                "name":"SASS",
+                "version": "^1.32.11",
+                "category":"front"
+            },
+            {
+                "name":"VUE",
+                "version": "^2",
+                "category":"front"
+            },
+            {
+                "name":"VUETIFY",
+                "version": "^2",
+                "category":"front"
+            },
+            {
+                "name":"NODE",
+                "version": "18.17.0",
+                "category":"front"
+            },
+            {
+                "name":"NPM",
+                "version": "9.6.7",
+                "category":"front"
+            },
+            {
+                "name":"PHP",
+                "version": "8.1.9",
+                "category":"back"
+            },
+            {
+                "name":"LARAVEL",
+                "version": "8.6.12",
+                "category":"back"
+            },
+            {
+                "name":"INERTIA",
+                "version": "0.6.9",
+                "category":"PACKPAGE-LARAVEL"
+            }
+        ]
+    },
+    {
+        "name":"my list",
+        "title": "ToDoList",
+        "picture": "todoList.png",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"",
+            "readme_md":""
+        },
+        "short_description": "",
+        "languages": [
+            {
+                "name":"HTML",
+                "version": "5",
+                "category":"front"
+            },
+            {
+                "name":"CSS",
+                "version": "3",
+                "category":"front"
+            },
+            {
+                "name":"BLADE",
+                "version": "",
+                "category":"front"
+            },
+            {
+                "name":"SASS",
+                "version": "^1.32.11",
+                "category":"front"
+            },
+            {
+                "name":"VUE",
+                "version": "^2",
+                "category":"front"
+            },
+            {
+                "name":"BOOTSTRAP",
+                "version": "^5.2.3",
+                "category":"front"
+            },
+            {
+                "name":"NODE",
+                "version": "18.17.0",
+                "category":"front"
+            },
+            {
+                "name":"NPM",
+                "version": "9.6.7",
+                "category":"front"
+            },
+            {
+                "name":"PHP",
+                "version": "8.1.9",
+                "category":"back"
+            },
+            {
+                "name":"LARAVEL",
+                "version": "8.6.12",
+                "category":"back"
+            },
+            {
+                "name":"INERTIA",
+                "version": "0.6.9",
+                "category":"PACKPAGE-LARAVEL"
+            },
+            {
+                "name":"FORTIFY",
+                "version": "^1.17",
+                "category":"PACKPAGE-LARAVEL"
+            },
+            {
+                "name":"SANCTUM",
+                "version": "^1.17",
+                "category":"PACKPAGE-LARAVEL"
+            }
+        ]
     }
 ]

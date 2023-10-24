@@ -34,7 +34,6 @@ export default {
             let habilitys = require("@/assets/skills/habilitys.json");
             this.skills = habilitys;
             for (const value of this.skills) {
-                console.log(value.name);
                 value.picture = require("@/assets/skills/" + value.picture);
             }
         },

@@ -2,6 +2,9 @@
     <div class="flex justify-center bg-white sm:p-10 dark:bg-primary-100">
         <div class="container">
             <title-section title="PROJETOS"></title-section>
+            <div class="flex justify-center w-full mt-3">
+                <card-projects></card-projects>
+            </div>
         </div>
     </div>
 </template>
@@ -13,8 +16,11 @@ export default {
     },
     data() {
         return {
-
+            projects: require("@/assets/projects/projects.json"),
         }
     },
+    mounted(){
+        console.log(this.projects);
+    }
 }
 </script>
