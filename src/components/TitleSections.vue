@@ -1,5 +1,9 @@
 <template>
-    <div class="title-section">
+    <div :class="{
+        'title-section': true,
+        'title-section-dark': dark_theme,
+
+    }">
         <h1>{{title}}</h1>
         <div class="border-title"></div>
     </div>
@@ -28,11 +32,11 @@ div.title-section div.border-title{
     z-index: 0;
 }
 /***THEME DARK**/
-.dark div.title-section h1{
+.dark div.title-section-dark h1{
     color: #e4e4e7;
     background-color: #666666;
 }
-.dark div.title-section div.border-title{
+.dark div.title-section-dark div.border-title{
     background-color: #e4e4e7;
 }
 </style>
@@ -42,6 +46,10 @@ export default {
         title: {
             type: String,
             required: true,
+        },
+        dark_theme: {
+            type: Boolean,
+            default: true
         }
     }
 }

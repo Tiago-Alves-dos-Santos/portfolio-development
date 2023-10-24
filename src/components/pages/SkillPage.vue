@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center p-4 mt-1 bg-code parallax-bg">
         <div class="container">
-            <title-section title="HABILIDADES"></title-section>
+            <title-section title="HABILIDADES" :dark_theme="false"></title-section>
             <div class="flex flex-wrap justify-center md:justify-start">
                 <div class="flex justify-center w-full mt-2 mb-2">
                     <select v-model="skillFilter" class="w-1/2 py-3 rounded-lg">
