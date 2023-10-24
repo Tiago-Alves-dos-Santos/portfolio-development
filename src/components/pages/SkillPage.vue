@@ -8,12 +8,14 @@
                         <option value="all">TUDO</option>
                         <option value="front">FRONT-END</option>
                         <option value="back">BACK-END</option>
-                        <option value="fr-css">FRAMEWORK CSS</option>
-                        <option value="fr-js">FRAMEWORK JS</option>
+                        <option value="frameworkCSS">FRAMEWORK CSS</option>
+                        <option value="frameworkJS">FRAMEWORK JS</option>
                         <option value="database">DATABASE</option>
                     </select>
                 </div>
-                <card v-for="(value, index) in skills" :key="index" :title="value.title" :img="value.picture"></card>
+                <card v-for="(value, index) in skills" :key="index" :title="value.title" :img="value.picture" :class="{
+                    'hidden': hiddenSkill(value)
+                }"></card>
             </div>
         </div>
     </div>
@@ -35,6 +37,17 @@ export default {
                 console.log(value.name);
                 value.picture = require("@/assets/skills/" + value.picture);
             }
+        },
+        hiddenSkill(skill){
+            let show = true; //default value
+            if(this.skillFilter == 'all'){
+                show = false;
+            }else if(this.skillFilter == 'front' && (skill.category == 'front' || skill.category == 'frameworkCSS' || skill.category == 'frameworkJS')){ //front end
+                show = false;
+            }else if(this.skillFilter == skill.category){ //back-end, database, only framework css or js
+                show = false;
+            }
+            return show;
         }
     },
     mounted() {
