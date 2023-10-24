@@ -29,7 +29,6 @@ export default {
     },
     mounted(){
         this.loadImageProjects();
-        console.log(this.projects);
     }
 }
 </script>
