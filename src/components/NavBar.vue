@@ -66,8 +66,8 @@ export default {
                 },
                 experience: {
                     name: 'experiência',
-                    url: '/',
-                    hash: 'experience',
+                    url: '#experiences',
+                    hash: 'experiences',
                 },
                 contact: {
                     name: 'contato',
