@@ -4,7 +4,7 @@
             <img :src="project.picture" alt="" class="w-1/4 rounded-md">
         </div>
         <div>
-            <h1 class="text-3xl :text-center dark:text-zinc-300">{{ project.title ?? title }}</h1>
+            <h1 class="text-3xl text-center dark:text-zinc-300">{{ project.title ?? title }}</h1>
         </div>
         <div class="text-left md:text-justify dark:text-zinc-300" v-html="project.short_description ?? description"></div>
         <div class="mt-4 flex flex-wrap justify-center md:absolute md:bottom-[10px] md:right-0">
@@ -49,8 +49,6 @@ export default {
                 showCancelButton: false,
                 focusConfirm: false,
                 confirmButtonText:'OK',
-
-
             })
         }
     },

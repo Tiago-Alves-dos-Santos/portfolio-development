@@ -14,6 +14,7 @@ let Functions = {
     },
     dateDifference: (date_string, date_for_differecen = new Date()) => {
         const date = new Date(date_string);
+        date_for_differecen = new Date(date_for_differecen);
 
         const difference_mileseconds = date_for_differecen - date;
         const difference_seconds = difference_mileseconds / 1000;
@@ -24,8 +25,19 @@ let Functions = {
         const years = Math.floor(difference_days / 365);
         const months = Math.floor((difference_days % 365) / 30);
         const days = Math.floor(difference_days % 30);
-
         return { years, months, days };
+    },
+    formateDateString: (date_string) => {
+        const date = new Date(date_string); 
+        if (isNaN(date.getTime())) {
+          return "Invalid date"; 
+        }
+        const day = String(date.getUTCDate()).padStart(2, '0'); // Obtém o dia e garante que tenha dois dígitos
+        const month = String(date.getUTCMonth() + 1).padStart(2, '0'); // Obtém o mês (0 a 11) e acrescenta 1, depois garante dois dígitos
+        const year = date.getUTCFullYear(); // Obtém o ano no formato AAAA
+      
+        return `${day}/${month}/${year}`;
+      
     }
 }
 
