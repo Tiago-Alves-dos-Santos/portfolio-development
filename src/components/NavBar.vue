@@ -26,7 +26,7 @@
                     <div id="menuMobile"
                         class="hidden z-30 absolute flex-col top-[30px] right-[8px] rounded-md text-center shadow-md bg-white border border-black dark:bg-primary-600">
                         <a :href="value.url" v-for="(value, index) in menu_links" :key="index"
-                            class="px-2 py-2 uppercase border-b border-black dark:text-white ">
+                            class="px-2 py-2 uppercase border-b border-black dark:text-white links-active ">
                             {{ value.name }}
                         </a>
                     </div>
@@ -34,7 +34,7 @@
                 <div class="hidden sm:flex">
                     <!-- nav-active -->
                     <a :href="value.url"
-                        class="px-4 py-4 uppercase hover:bg-primary-900 hover:text-white dark:text-white dark:hover:text-black dark:hover:bg-white"
+                        class="px-4 py-4 uppercase hover:bg-primary-900 hover:text-white dark:text-white dark:hover:text-black dark:hover:bg-white links-active"
                         v-for="(value, index) in menu_links" :key="index">
                         {{ value.name }}
                     </a>
@@ -105,6 +105,9 @@ export default {
                 menuMobile.classList.add('flex');
                 this.menuMobileIsOpen = true;
             }
+        },
+        linkActive(){
+            
         }
     }
 }

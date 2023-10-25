@@ -1108,6 +1108,10 @@ body.dark{
     width: 100%;
   }
 
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:border-b-0 {
     border-bottom-width: 0px;
   }
