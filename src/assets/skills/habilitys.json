@@ -107,16 +107,40 @@
         "category": "back"
     },
     {
-        "name": "sql",
-        "title": "SQL",
-        "picture": "sql.png",
-        "category": "database"
+        "name": "mysql",
+        "title": "MySql",
+        "picture": "mysql.png",
+        "category": "database-sql"
+    },
+    {
+        "name": "maria db",
+        "title": "MariaDB",
+        "picture": "mariadb.png",
+        "category": "database-sql"
+    },
+    {
+        "name": "postgresql",
+        "title": "PostgreSQL",
+        "picture": "pgsql.png",
+        "category": "database-sql"
+    },
+    {
+        "name": "sql server",
+        "title": "SqlServer",
+        "picture": "sqlserver.png",
+        "category": "database-sql"
+    },
+    {
+        "name": "sql lite",
+        "title": "SQLite",
+        "picture": "sqlite.png",
+        "category": "database-sql"
     },
     {
         "name": "nosql",
-        "title": "NoSQL",
+        "title": "MongoDB",
         "picture": "mongodbText.png",
-        "category": "database"
+        "category": "database-no-sql"
     }
 
 ]

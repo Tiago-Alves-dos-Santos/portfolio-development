@@ -1,7 +1,7 @@
 <template>
-    <div class="flex justify-center mt-1 bg-white sm:p-10 dark:bg-primary-100">
+    <div class="flex justify-center bg-white sm:p-10 dark:bg-primary-100 scroll-lazy" id="about">
         <div class="container rounded-md">
-            <title-section title="Sobre"></title-section>
+            <title-section title="Sobre" class="mt-11 sm:mt-9"></title-section>
             <div class="flex justify-center w-full mt-3">
                 <div class="w-full pb-2 md:px-4 md:flex">
                     <!-- Picture and info text -->
@@ -101,14 +101,28 @@ export default {
         showLightBox() {
             Swal.fire({
                 title: 'Atenção!',
-                text: 'Tem realmente certeza que quer continuar? Quer realmente ver minha foto? 😬​',
+                icon: 'warning',
+                text: 'Realmente deseja ver a foto?​',
                 showDenyButton: true,
                 confirmButtonText: 'Sim, quero ver!',
                 denyButtonText: 'Não, obrigado por avisar! 😮‍💨​',
             }).then((result) => {
                 if (result.isConfirmed) {
-                    this.img = require("@/assets/iprofile.png");
-                    this.toggle_lightbox = true;
+
+                    Swal.fire({
+                        title: 'Atenção!!!!',
+                        icon: 'warning',
+                        text: 'Última chance!!! Realmente deseja ver minha foto? 😬​',
+                        showDenyButton: true,
+                        confirmButtonText: 'Sim, tenho certeza!',
+                        denyButtonText: 'Não, agora mudei de idéia! 😮‍💨​',
+                    }).then((response) => {
+                        if (response.isConfirmed) {
+                            this.img = require("@/assets/iprofile.png");
+                            this.toggle_lightbox = true;
+                        }
+                    })
+
                 }
             })
         },

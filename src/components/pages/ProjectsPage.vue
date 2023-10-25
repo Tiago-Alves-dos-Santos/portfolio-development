@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-wrap justify-center p-4 bg-white sm:p-10 dark:bg-primary-100">
+    <div class="flex flex-wrap justify-center p-4 bg-white sm:p-10 dark:bg-primary-100 scroll-lazy" id="projects">
         <div class="container">
             <title-section title="PROJETOS"></title-section>
-            <div class="flex flex-wrap justify-center w-full mt-3 md:justify-start">
+            <div class="flex flex-wrap justify-start w-full mt-3 sm:justify-center 2xl:justify-start">
                 <card-projects v-for="(value, index) in projects" :key="index" :project="value"></card-projects>
             </div>
             
@@ -29,7 +29,6 @@ export default {
     },
     mounted(){
         this.loadImageProjects();
-        console.log(this.projects);
     }
 }
 </script>
