@@ -680,6 +680,20 @@ video {
   width: 100%;
 }
 
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.min-w-fit {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.min-w-\[50\%\] {
+  min-width: 50%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -861,6 +875,10 @@ video {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1145,6 +1163,14 @@ body.dark{
 
   .md\:pl-2 {
     padding-left: 0.5rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-justify {
+    text-align: justify;
   }
 }
 
