@@ -26,7 +26,7 @@ let Functions = {
         const days = Math.floor(difference_days % 30);
 
         return { years, months, days };
-    }
+    },
 }
 
 export default Functions;
