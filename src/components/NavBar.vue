@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed z-50 flex justify-center w-full bg-gray-100 shado w-md dark:bg-black">
+    <div class="fixed top-0 z-50 flex justify-center w-full bg-gray-100 shado w-md dark:bg-black">
         <div class="container flex justify-between py-2 sm:py-0">
             <!-- button toggle dark theme -->
             <div class="flex flex-col justify-center">

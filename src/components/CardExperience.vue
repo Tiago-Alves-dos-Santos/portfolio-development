@@ -8,28 +8,28 @@
         </div>
         <div class="p-4 mt-2 border shadow-sm">
             <ul>
-                <li>
+                <li class="dark:text-zinc-300">
                     <span class="font-bold">Estado:</span> {{ company.state }}
                 </li>
-                <li>
+                <li class="dark:text-zinc-300">
                     <span class="font-bold">Cidade:</span> {{ company.city }}
                 </li>
-                <li>
+                <li class="dark:text-zinc-300">
                     <span class="font-bold">Jornada:</span> {{ company.time_job }}
                 </li>
-                <li>
+                <li class="dark:text-zinc-300">
                     <span class="font-bold">Formato:</span> {{ company.type_job }}
                 </li>
-                <li>
+                <li class="dark:text-zinc-300">
                     <span class="font-bold">Sênioridade:</span> {{ company.my_level }}
                 </li>
-                <li>
-                    <span class="font-bold">Inicio:</span> {{ company.started_date }}
+                <li class="dark:text-zinc-300">
+                    <span class="font-bold">Inicio:</span> {{ functions.formateDateString(company.started_date) }}
                 </li>
-                <li>
-                    <span class="font-bold">Fim:</span> {{ company.finished_date }}
+                <li class="dark:text-zinc-300">
+                    <span class="font-bold">Fim:</span> {{ functions.formateDateString(company.finished_date)  }}
                 </li>
-                <li>
+                <li class="dark:text-zinc-300">
                     <span class="font-bold">Tempo:</span> {{ time_in_company.years }} anos e {{ time_in_company.months + 1 }}
                     meses
                 </li>
@@ -37,9 +37,11 @@
         </div>
         <div class="p-4 mt-3 border">
             <div>
-                <h4 class="mb-3 text-xl font-bold text-center">Descrição</h4>
+                <h4 class="mb-3 text-xl font-bold text-center dark:text-zinc-300">Descrição</h4>
             </div>
-            <div v-html="limited_text"></div>
+            <div>
+                <p class="dark:text-zinc-300" v-html="limited_text"></p>
+            </div>
         </div>
         <div class="mt-4 flex flex-wrap justify-center md:absolute md:bottom-[10px] md:right-0">
             <button  class="px-3 py-1 mr-2 text-white bg-blue-400 rounded-md" @click="readMore">LER MAIS</button>
@@ -54,7 +56,8 @@ import Swal from 'sweetalert2';
 export default {
     data() {
         return {
-            time_in_company: Functions.dateDifference(this.company.started_date, this.company.finished_date)
+            time_in_company: Functions.dateDifference(this.company.started_date, this.company.finished_date),
+            functions: Functions,
         }
     },
     computed: {

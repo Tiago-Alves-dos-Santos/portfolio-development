@@ -25,9 +25,20 @@ let Functions = {
         const years = Math.floor(difference_days / 365);
         const months = Math.floor((difference_days % 365) / 30);
         const days = Math.floor(difference_days % 30);
-        console.log(years, months, days);
         return { years, months, days };
     },
+    formateDateString: (date_string) => {
+        const date = new Date(date_string); 
+        if (isNaN(date.getTime())) {
+          return "Invalid date"; 
+        }
+        const day = String(date.getUTCDate()).padStart(2, '0'); // Obtém o dia e garante que tenha dois dígitos
+        const month = String(date.getUTCMonth() + 1).padStart(2, '0'); // Obtém o mês (0 a 11) e acrescenta 1, depois garante dois dígitos
+        const year = date.getUTCFullYear(); // Obtém o ano no formato AAAA
+      
+        return `${day}/${month}/${year}`;
+      
+    }
 }
 
 export default Functions;
