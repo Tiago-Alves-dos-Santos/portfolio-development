@@ -12,29 +12,25 @@
                     <font-awesome-icon id="theme_light" icon="fa-solid fa-sun" class="hidden dark:text-white" />
                 </div>
             </div>
-            <!-- links of navbar -->
+            <!-- links navbar -->
             <div class="flex">
-                <!-- <router-link to="/">SOBRE</router-link> 
-                <router-link to="/">HABILIDADES</router-link> 
-                <router-link to="/">PROJETOS</router-link> 
-                <router-link to="/">EXPERIÊNCIAS</router-link> 
-                <router-link to="/">CONTATO</router-link>  -->
-
                 <div class="relative flex flex-col items-center content-center justify-center sm:hidden"
                     @click="openMenuMobile">
                     <font-awesome-icon icon="fa-solid fa-bars" class="mr-2 text-xl dark:text-white sm:mr-0" />
                     <div id="menuMobile"
                         class="hidden z-30 absolute flex-col top-[30px] right-[8px] rounded-md text-center shadow-md bg-white border border-black dark:bg-primary-600">
                         <a :href="value.url" v-for="(value, index) in menu_links" :key="index"
-                            class="px-2 py-2 uppercase border-b border-black dark:text-white links-active ">
+                            :class="['px-2 py-2 uppercase border-b border-black dark:text-white links-active', this.hash_now == value.hash ?'nav-active':'']">
                             {{ value.name }}
                         </a>
                     </div>
                 </div>
+                <!-- small until xl size -->
                 <div class="hidden sm:flex">
                     <!-- nav-active -->
                     <a :href="value.url"
-                        class="px-4 py-4 uppercase hover:bg-primary-900 hover:text-white dark:text-white dark:hover:text-black dark:hover:bg-white links-active"
+                        :class="['px-4 py-4 uppercase hover:bg-primary-900 hover:text-white dark:text-white dark:hover:text-black dark:hover:bg-white links-active',
+                        this.hash_now == value.hash ?'nav-active':'' ]"
                         v-for="(value, index) in menu_links" :key="index">
                         {{ value.name }}
                     </a>
@@ -51,26 +47,32 @@ export default {
         return {
             data_theme: Theme,
             theme_actual: Theme.light,
+            hash_now: '',
             menu_links: {
                 about: {
                     name: 'sobre',
                     url: '#about',
+                    hash: 'about',
                 },
                 skills: {
                     name: 'habilidades',
                     url: '#skills',
+                    hash: 'skills',
                 },
                 projects: {
                     name: 'projetos',
                     url: '#projects',
+                    hash: 'projects',
                 },
                 experience: {
                     name: 'experiência',
                     url: '/',
+                    hash: 'experience',
                 },
                 contact: {
                     name: 'contato',
                     url: '/',
+                    hash: 'contact',
                 },
             },
             menuMobileIsOpen: false
@@ -81,13 +83,13 @@ export default {
             let body = document.body;
             let theme_dark = document.getElementById('theme_dark');
             let theme_light = document.getElementById('theme_light');
-            if (this.theme_actual == Theme.light) {//theme to dark
+            if (this.theme_actual == Theme.light) {//theme light to dark
                 this.theme_actual = Theme.dark;
                 //class
                 body.classList.add('dark');
                 theme_dark.classList.add('hidden');
                 theme_light.classList.remove('hidden');
-            } else {//theme to light
+            } else {//theme dark to light
                 this.theme_actual = Theme.light;
                 body.classList.remove('dark');
                 theme_dark.classList.remove('hidden');
@@ -107,8 +109,13 @@ export default {
             }
         },
         linkActive(){
-            
+            let after_hash = window.location.hash.substring(1);
+            this.hash_now = after_hash;
         }
+    },
+    mounted(){
+        //event - change of hash(#) in url
+        window.addEventListener("hashchange", this.linkActive);
     }
 }
 </script>
