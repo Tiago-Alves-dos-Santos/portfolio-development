@@ -14,6 +14,7 @@ let Functions = {
     },
     dateDifference: (date_string, date_for_differecen = new Date()) => {
         const date = new Date(date_string);
+        date_for_differecen = new Date(date_for_differecen);
 
         const difference_mileseconds = date_for_differecen - date;
         const difference_seconds = difference_mileseconds / 1000;
@@ -24,7 +25,7 @@ let Functions = {
         const years = Math.floor(difference_days / 365);
         const months = Math.floor((difference_days % 365) / 30);
         const days = Math.floor(difference_days % 30);
-
+        console.log(years, months, days);
         return { years, months, days };
     },
 }

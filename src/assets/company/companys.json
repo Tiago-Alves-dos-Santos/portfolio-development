@@ -4,9 +4,9 @@
         "title":"DC Tenologia",
         "site_url":"https://tecnologiadc.com.br/",
         "repo":"https://github.com/repodc",
-        "about_my_job":"Atuei em: Criação de layouts com responsividade (front-end). Criação e consumo de APIs. Criação autenticação e autorizações de usuários de um a muitos(guards cnfigurados). Criação de cron jobs e eventos em tempo real, cron job já cheguei a configurar em servidor.Atualizei sistemas legados desde versões antigas do laravel a sistemas sem framework, apenas o php.Configurei ambientes em servidor, domínio e sub-domínio e tive os primeiros contato com linguagem linux Coloquei sistema em servidor com controle de versão, controlados pelo git com githb actions Trabalhei com sistemas sem controle de versão, mas com plugin para acesso FTP",
+        "about_my_job":"Atuei em: Criação de layouts com responsividade (front-end). Criação e consumo de APIs. Criação autenticação e autorizações de usuários de um a muitos(guards cnfigurados). Criação de cron jobs e eventos em tempo real, cron job já cheguei a configurar em servidor. Atualizei sistemas legados desde versões antigas do laravel a sistemas sem framework, apenas o php.Configurei ambientes em servidor, domínio e sub-domínio e tive os primeiros contato com linguagem linux Coloquei sistema em servidor com controle de versão, controlados pelo git com githb actions Trabalhei com sistemas sem controle de versão, mas com plugin para acesso FTP",
         "state":"São Paulo",
-        "country":"Guarulhos",
+        "city":"Guarulhos",
         "my_level":"Júnior",
         "type_job":"Remoto",
         "time_job":"Integral",
@@ -20,11 +20,11 @@
         "repo":"",
         "about_my_job":"Tive um contato inicial com docker e laradock. Trabalhei com criação de sistema desde a modelagem, versionamento a lançamento de versão estávelTive",
         "state":"São Paulo",
-        "country":"São Paulo",
+        "city":"São Paulo",
         "my_level":"Pleno",
         "type_job":"Remoto",
         "time_job":"Integral",
-        "started_date":"2021-07-01",
-        "finished_date":"2023-06-01"
+        "started_date":"2021-09-01",
+        "finished_date":"2023-07-01"
     }
 ]

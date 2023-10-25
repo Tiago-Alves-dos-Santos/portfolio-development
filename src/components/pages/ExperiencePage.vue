@@ -2,7 +2,7 @@
     <div class="flex justify-center p-4 bg-code parallax-bg scroll-lazy" id="experiences">
         <div class="container">
             <title-section title="EXPERIÊNCIAS" :dark_theme="false"></title-section>
-            <div class="bg-white">
+            <div class="">
                 <card-experience v-for="(value, index) in companys" :key="index" :company="value"></card-experience>
             </div>
         </div>
