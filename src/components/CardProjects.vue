@@ -49,8 +49,6 @@ export default {
                 showCancelButton: false,
                 focusConfirm: false,
                 confirmButtonText:'OK',
-
-
             })
         }
     },
