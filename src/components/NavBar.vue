@@ -71,8 +71,8 @@ export default {
                 },
                 contact: {
                     name: 'contato',
-                    url: '/',
-                    hash: 'contact',
+                    url: '#contatc',
+                    hash: 'contatc',
                 },
             },
             menuMobileIsOpen: false
