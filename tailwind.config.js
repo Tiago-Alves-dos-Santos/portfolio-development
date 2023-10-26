@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 /** npx tailwindcss -i src/input.css -o src/assets/output.css --watch */
+/**
+ * For productions, css minify
+ * npx tailwindcss -o ./src/assets/output.css --minify
+ */
 module.exports = {
   content: [
     "./public/index.html",
