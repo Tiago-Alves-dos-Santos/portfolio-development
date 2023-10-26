@@ -117,6 +117,7 @@ export default {
         //event - change of hash(#) in url
         window.addEventListener("hashchange", this.linkActive);
         window.location.href = this.menu_links.about.url;
+        this.linkActive();
     }
 }
 </script>
