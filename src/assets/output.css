@@ -1184,6 +1184,10 @@ body.dark{
     right: 1px;
   }
 
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }

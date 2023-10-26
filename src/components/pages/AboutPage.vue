@@ -55,22 +55,7 @@
                                 meu saxofone, afinal quem não gosta de uma boa música​!? 🎷​🎵
                             </p>
                         </div>
-                        <div class="flex justify-end md:absolute md:bottom-px md:right-px">
-                            <a href="https://www.linkedin.com/in/tiago-alves-dos-santos-de-oliveira-96699a189/"
-                                target="_blank">
-                                <img src="@/assets/icons8-linkedin.svg" alt="linkedin">
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=558899484317&text=Ol%C3%A1,%20cheguei%20aqui%20por%20meio%20de%20seu%20portfolio!%20Me%20chamo..."
-                                target="_blank">
-                                <img src="@/assets/icons8-whatsapp.svg" alt="whatsapp">
-                            </a>
-                            <a href="https://t.me/TiagoAlves2001" target="_blank">
-                                <img src="@/assets/icons8-telegram.svg" alt="telegram">
-                            </a>
-                            <a href="" target="_blank">
-                                <img src="@/assets/icons8-pdf-48.png" alt="curricúlo">
-                            </a>
-                        </div>
+                        <social-media class="md:bottom-0 md:absolute"></social-media>
                     </div>
                 </div>
             </div>
@@ -79,13 +64,15 @@
 </template>
 <style scoped></style>
 <script>
+import SocialMedia from '../SocialMedia.vue';
 import Functions from '@/js/functions';
 import VueEasyLightbox from 'vue-easy-lightbox';
 import Swal from 'sweetalert2';
 /* eslint-disable */
 export default {
     components: {
-        VueEasyLightbox
+        VueEasyLightbox,
+        SocialMedia,
     },
     data() {
         return {
