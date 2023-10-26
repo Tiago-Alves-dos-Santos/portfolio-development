@@ -644,6 +644,10 @@ video {
   margin-top: 1rem;
 }
 
+.mr-0 {
+  margin-right: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -1182,6 +1186,10 @@ body.dark{
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:mr-0 {
+    margin-right: 0px;
   }
 
   .md\:flex {

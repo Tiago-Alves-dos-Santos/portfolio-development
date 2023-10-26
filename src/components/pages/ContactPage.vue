@@ -27,7 +27,8 @@
                 <div class="flex justify-center w-full">
                     <div class="flex flex-col">
                         <div class="mb-2 md:mb-0 min-w-min">
-                            <div class="flex justify-end w-full px-2 py-3 rounded-md md:px-0 bg-slate-200 md:bg-transparent">
+                            <div
+                                class="flex justify-end w-full px-2 py-3 rounded-md md:px-0 bg-slate-200 md:bg-transparent">
                                 <div class="rounded-md md:bg-slate-200 md:p-3">
                                     <a href="https://www.linkedin.com/in/tiago-alves-dos-santos-de-oliveira-96699a189/"
                                         target="_blank" class="mr-2 text-2xl text-zinc-600 hover:text-blue-500">
@@ -52,10 +53,20 @@
                             </div>
                         </div>
                         <div class="min-w-min">
-                            <form>
-                                <input type="text" placeholder="Nome" class="w-full px-1 py-3 mb-2 border border-black">
-                                <input type="text" placeholder="Assunto" class="w-full px-1 py-3 mb-2 border border-black">
-                                <textarea cols="30" rows="10" class="w-full px-1 py-3 border border-black"></textarea>
+                            <form @submit.prevent="sendEmail">
+                                <input type="text" placeholder="Nome" id="name"
+                                    class="w-full px-1 py-3 mb-2 border border-black rounded-md" v-model="form.name">
+                                <input type="text" placeholder="Telefone" id="cellphone"
+                                    class="w-full px-1 py-3 mb-2 border border-black rounded-md" v-model="form.cellphone">
+                                <input type="text" placeholder="Assunto" id="subject"
+                                    class="w-full px-1 py-3 mb-2 border border-black rounded-md" v-model="form.subject">
+                                <textarea cols="30" rows="10" id="message"
+                                    class="w-full px-1 py-3 border border-black rounded-md" v-model="form.message"
+                                    placeholder="Menssagem"></textarea>
+                                <div class="flex justify-end">
+                                    <button class="px-3 py-1 mr-0 text-white bg-green-500 rounded-md" type="submit">ENVIAR
+                                        EMAIL</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -66,7 +77,51 @@
     </div>
 </template>
 <script>
+import Swal from 'sweetalert2';
 export default {
-
+    data() {
+        return {
+            form: {
+                name: '',
+                cellphone:'',
+                subject: '',
+                message: '',
+            }
+        }
+    },
+    methods: {
+        sendEmail() {
+            const myEmail = 'tiagooliveiraaso2@gmail.com';
+            let error = '';
+            if (this.form.name.trim() === "") {
+                error += "O campo Nome não pode estar vazio";
+            }
+            if (this.form.cellphone.trim() === "") {
+                error += "<br>O campo Telefone não pode estar vazio";
+            }
+            if (this.form.subject.trim() === "") {
+                error += "<br>O campo Assunto não pode estar vazio";
+            }
+            if (this.form.message.trim() === "") {
+                error += "<br>O campo Mensagem não pode estar vazio";
+            }
+            if (error) {
+                Swal.fire({
+                    title: 'Atenção!',
+                    icon: 'error',
+                    html: error,
+                    showDenyButton: false,
+                    confirmButtonText: 'OK',
+                });
+                return;
+            }
+            //welcome message
+            let welcomeMessage = `Olá me chamo: ${this.form.name} e meu celular é ${this.form.cellphone} e quero falar sobre: \n`;
+            let subjectEmail = welcomeMessage + this.form.message;
+            //send email
+            let mailtoLink = "mailto:" + myEmail + "?subject=" + encodeURIComponent(this.form.subject) + "&body=" + encodeURIComponent(subjectEmail);
+            window.open(mailtoLink);
+        }
+    }
 }
 </script>
