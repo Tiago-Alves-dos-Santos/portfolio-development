@@ -5,7 +5,9 @@
 
     }">
         <h1>{{title}}</h1>
-        <div class="border-title"></div>
+        <div :class="{
+            'border-title': dark_theme
+        }"></div>
     </div>
 </template>
 <style scoped>

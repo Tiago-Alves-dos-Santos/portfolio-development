@@ -8,6 +8,8 @@ import Card from './components/Card';
 import FontAwesomeIcon from './js/font_awessome.js';
 /* lightbox */
 import VueEasyLightbox from 'vue-easy-lightbox';
+/** vue mas */
+import VueMask from '@devindex/vue-mask';
 /* tailwind.css */
 import './assets/output.css';
 
@@ -17,4 +19,5 @@ createApp(App)
 .component('card', Card)
 .use(router)
 .use(VueEasyLightbox)
+.use(VueMask)
 .mount('#app')
