@@ -57,7 +57,7 @@
                                 <input type="text" placeholder="Nome" id="name"
                                     class="w-full px-1 py-3 mb-2 border border-black rounded-md" v-model="form.name">
                                 <input type="text" placeholder="Telefone" id="cellphone"
-                                    class="w-full px-1 py-3 mb-2 border border-black rounded-md" v-model="form.cellphone">
+                                    class="w-full px-1 py-3 mb-2 border border-black rounded-md" v-model="form.cellphone" v-mask-phone.br>
                                 <input type="text" placeholder="Assunto" id="subject"
                                     class="w-full px-1 py-3 mb-2 border border-black rounded-md" v-model="form.subject">
                                 <textarea cols="30" rows="10" id="message"
@@ -98,6 +98,8 @@ export default {
             }
             if (this.form.cellphone.trim() === "") {
                 error += "<br>O campo Telefone não pode estar vazio";
+            }else if(this.form.cellphone.length < 16){
+                error += "<br>O campo Telefone tem que esta no formato correto: (00) 0 0000-0000";
             }
             if (this.form.subject.trim() === "") {
                 error += "<br>O campo Assunto não pode estar vazio";
