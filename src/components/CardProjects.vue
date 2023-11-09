@@ -1,5 +1,6 @@
 <template>
-    <div class="relative max-w-md py-5 mt-1 mb-2 mr-2 bg-white border rounded-md shadow-md px-7 md:mb-0 md:pb-14 dark:bg-gray-500">
+    <div
+        class="relative max-w-md py-5 mt-1 mb-2 mr-2 bg-white border rounded-md shadow-md px-7 md:mb-0 md:pb-14 dark:bg-gray-500">
         <div class="flex justify-center">
             <img :src="project.picture" alt="" class="w-1/4 rounded-md">
         </div>
@@ -12,7 +13,10 @@
                 class="px-3 py-1 mr-2 text-white bg-black rounded-md">GITHUB</a>
             <a :href="project.links.readme_md" target="_blank" class="px-3 py-1 mr-2 text-white bg-blue-400 rounded-md">LER
                 MAIS</a>
-            <button v-if="project.languages" class="px-3 py-1 mr-2 text-white bg-teal-500 rounded-md" @click="readLanguages">TECNOLOGIAS</button>
+            <button v-if="project.languages" class="px-3 py-1 mr-2 text-white bg-teal-500 rounded-md"
+                @click="readLanguages">TECNOLOGIAS</button>
+            <a v-if="project.links.video" :href="project.links.video" target="_blank"
+                class="px-3 py-1 mr-2 text-white bg-red-600 rounded-md">VÍDIO</a>
             <a v-if="project.links.server || project.links.github_page"
                 :href="project.links.server ?? project.links.github_page" target="_blank"
                 class="px-3 py-1 mr-2 text-white bg-green-500 rounded-md">VER SISTEMA</a>
@@ -35,20 +39,21 @@ export default {
     },
     methods: {
         readLanguages() {
-            let htmlList = "<ul>";
+            let htmlTable = "<table class='w-full'><thead><tr><th>Nome</th><th>Versão</th><th>Categoria</th></tr></thead><tbody>";
             this.project.languages.forEach(element => {
-                htmlList += "<li>" + element.name +" <span class='italic'> v("+element.version+"</span>) "+"<span>"+element.category+"</span>" +"</li>";
+                htmlTable += "<tr><td>" + element.name + "</td><td><span class='italic font-bold'> v(" + element.version + ") </span></td><td><span>" + element.category + "</span></td></tr>";
             });
-            htmlList += "</ul>";
+            htmlTable += "</tbody></table>";
+
 
             Swal.fire({
                 title: this.project.title,
                 icon: 'info',
-                html:htmlList,
+                html: htmlTable,
                 showCloseButton: true,
                 showCancelButton: false,
                 focusConfirm: false,
-                confirmButtonText:'OK',
+                confirmButtonText: 'OK',
             })
         }
     },
