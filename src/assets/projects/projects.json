@@ -205,6 +205,72 @@
         ]
     },
     {
+        "name":"my list",
+        "title": "Lista de contatos",
+        "picture": "mongodbText.png",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"https://github.com/Tiago-Alves-dos-Santos/ListContact",
+            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/ListContact#readme",
+            "video": "https://www.youtube.com/watch?v=zZdT9-bcIKI"
+        },
+        "short_description": "Sistema de lista de tarefas. O objetivo principal foi demonstrar uso do fortify, sanctum e swagger.",
+        "languages": [
+            {
+                "name":"HTML",
+                "version": "5",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"CSS",
+                "version": "3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"BLADE",
+                "version": "",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"SASS",
+                "version": "^1.32.11",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"TAILWIND",
+                "version": "^3.3.3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NODE",
+                "version": "18.17.0",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NPM",
+                "version": "9.6.7",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"PHP",
+                "version": "8.1.9",
+                "category":"BACK-END"
+            },
+            {
+                "name":"LARAVEL",
+                "version": "8.6.12",
+                "category":"BACK-END"
+            },
+            {
+                "name":"LIVEWIRE",
+                "version": "3",
+                "category":"PACKPAGE-LARAVEL"
+            }
+        ]
+    },
+    {
         "name":"Construção",
         "title": "Aguarde...",
         "picture": "loading_project.jpg",
