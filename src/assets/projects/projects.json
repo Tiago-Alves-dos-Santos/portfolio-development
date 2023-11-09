@@ -8,7 +8,8 @@
             "server":"",
             "github_page":"",
             "github_repo":"https://github.com/Tiago-Alves-dos-Santos/Covid19",
-            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/Covid19/blob/master/README.md"
+            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/Covid19/blob/master/README.md",
+            "video": ""
         },
         "short_description": "Sistema consumindo API sobre o covid-19 no Brasil, consumindo pelo BACK-END.",
         "languages": [
@@ -68,7 +69,8 @@
             "server":"",
             "github_page":"",
             "github_repo":"https://github.com/Tiago-Alves-dos-Santos/EventsVuetify",
-            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/EventsVuetify/blob/master/README.md"
+            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/EventsVuetify/blob/master/README.md",
+            "video": ""
         },
         "short_description": "Sistema simples de cadastros e controle de eventos.",
         "languages": [
@@ -121,6 +123,11 @@
                 "name":"INERTIA",
                 "version": "0.6.9",
                 "category":"PACKPAGE-LARAVEL"
+            },
+            {
+                "name":"SQLITE",
+                "version": "3",
+                "category":"DATABASE"
             }
         ]
     },
@@ -133,7 +140,8 @@
             "server":"",
             "github_page":"",
             "github_repo":"https://github.com/Tiago-Alves-dos-Santos/ToDoList",
-            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/ToDoList/blob/master/README.md"
+            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/ToDoList/blob/master/README.md",
+            "video": ""
         },
         "short_description": "Sistema de lista de tarefas. O objetivo principal foi demonstrar uso do fortify, sanctum e swagger.",
         "languages": [
@@ -201,6 +209,11 @@
                 "name":"SANCTUM",
                 "version": "^1.17",
                 "category":"PACKPAGE-LARAVEL"
+            },
+            {
+                "name":"POSTGRESS",
+                "version": "16",
+                "category":"DATABASE"
             }
         ]
     },
@@ -216,7 +229,7 @@
             "readme_md":"https://github.com/Tiago-Alves-dos-Santos/ListContact#readme",
             "video": "https://www.youtube.com/watch?v=zZdT9-bcIKI"
         },
-        "short_description": "Sistema de lista de tarefas. O objetivo principal foi demonstrar uso do fortify, sanctum e swagger.",
+        "short_description": "Sistema para testar novas funcionalidades do livewire 3 juntamente com alpine. O banco NoSql foi escolhido apenas por questão de demonstração.",
         "languages": [
             {
                 "name":"HTML",
@@ -267,6 +280,11 @@
                 "name":"LIVEWIRE",
                 "version": "3",
                 "category":"PACKPAGE-LARAVEL"
+            },
+            {
+                "name":"MONGO DB",
+                "version": "7.0.3",
+                "category":"DATABASE"
             }
         ]
     },
