@@ -16,7 +16,7 @@
             <button v-if="project.languages" class="px-3 py-1 mr-2 text-white bg-teal-500 rounded-md"
                 @click="readLanguages">TECNOLOGIAS</button>
             <a v-if="project.links.video" :href="project.links.video" target="_blank"
-                class="px-3 py-1 mr-2 text-white bg-red-600 rounded-md">VÍDIO</a>
+                class="px-3 py-1 mr-2 text-white bg-red-600 rounded-md">VÍDEO</a>
             <a v-if="project.links.server || project.links.github_page"
                 :href="project.links.server ?? project.links.github_page" target="_blank"
                 class="px-3 py-1 mr-2 text-white bg-green-500 rounded-md">VER SISTEMA</a>
