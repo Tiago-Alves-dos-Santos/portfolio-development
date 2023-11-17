@@ -13,7 +13,7 @@
             <a href="https://github.com/Tiago-Alves-dos-Santos" target="_blank" class="mr-2 text-2xl text-zinc-600 hover:text-black">
                 <font-awesome-icon icon="fa-brands fa-github" />
             </a>
-            <a href="" target="_blank" class="text-2xl text-zinc-600 hover:text-red-500">
+            <a href="/public/file/curriculo.pdf" download class="text-2xl text-zinc-600 hover:text-red-500">
                 <font-awesome-icon icon="fa-solid fa-file-pdf" />
             </a>
         </div>
