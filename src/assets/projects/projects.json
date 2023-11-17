@@ -289,6 +289,57 @@
         ]
     },
     {
+        "name":"weather",
+        "title": "API clima",
+        "picture": "weather.png",
+        "visibility":"public",
+        "links": {
+            "server":"",
+            "github_page":"",
+            "github_repo":"https://github.com/Tiago-Alves-dos-Santos/weather-development",
+            "readme_md":"https://github.com/Tiago-Alves-dos-Santos/weather-development#readme",
+            "video": "https://www.youtube.com/watch?v=eOzNQ_VSKSU&feature=youtu.be"
+        },
+        "short_description": "Sistema para testar novas funcionalidades do livewire 3 juntamente com alpine. O banco NoSql foi escolhido apenas por questão de demonstração.",
+        "languages": [
+            {
+                "name":"HTML",
+                "version": "5",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"CSS",
+                "version": "3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"SASS",
+                "version": "^1.32.11",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"VUE",
+                "version": "3",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"ELEMENT PLUS UI",
+                "version": "2.4.2",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NODE",
+                "version": "20.0.9",
+                "category":"FRONT-END"
+            },
+            {
+                "name":"NPM",
+                "version": "10.1.0",
+                "category":"FRONT-END"
+            }
+        ]
+    },
+    {
         "name":"Construção",
         "title": "Aguarde...",
         "picture": "loading_project.jpg",
